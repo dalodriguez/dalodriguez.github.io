@@ -13,64 +13,52 @@ const last_posts = posts.slice(0, 3);
 <BaseLayout>
 
     <div class="pb-12 mt-5">
-          <div class="text-5xl font-bold">David Lopez Rodriguez</div>
+          <div class="text-4xl font-bold">David Lopez Rodriguez, PhD</div>
           <div class="text-3xl py-3 font-bold">Research fellow - University of Lausanne</div>
-          <div class="py-2">
-            <text class="text-lg">
-              As a multidisciplinary researcher, my focus lies in identifying and prioritizing risk assessments of environmental chemicals. My passion for this field stems from the pressing need to evaluate the impact of chemicals on human health and the environment. With expertise in multiple disciplines, including toxicology, environmental science, and bioinformatics, I strive to develop a comprehensive understanding of the potential risks associated with chemical exposures.
 
-              </text
-            >
-          </div>
+          <div class="py-2"><text class="text-lg"> <p align="justify">
+              As a multidisciplinary researcher, my focus lies in identifying and prioritizing risk assessments of environmental chemicals. My passion for this field stems from the pressing need to evaluate the impact of chemicals on human health and the environment. With expertise in multiple disciplines, including toxicology, environmental science, and bioinformatics, I strive to develop a comprehensive understanding of the potential risks associated with chemical exposures.
+           </p> </text> </div>
+
+           <div class="py-4">
+           <text class="text-lg"><p align="justify">  <b>	Disciplines:</b> Toxicology, Bioinformatics, Endocrinology, Environmental Science, Public Health, Risk assessment </p> </text>
+           </div>
+           
+  
+           <text class="text-lg"><p align="justify">  <b>	Skills and expertise:</b> Bioinformatics, Chemo-informatics, Neuroendocrinology, Environmental Sciences, Environmental Health, Endocrine Disruption, Toxicology, Computational Biology, Adverse outcome pathways, Chemical Risk Assessment, Environmental Pollution, Data Analysis, Estrogens, Molecular Biology, Physiology, Reproductive Toxicology, Xenobiotics  </p> </text>
+       
+
+
           <div class="mt-8">
       
           </div>
         </div>
 
         <div>
-          <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+          <div class="text-3xl w-full font-bold mb-2">Current projects </div>
         </div>
 
         <HorizontalCard
-          title="Demo Project 1"
-          img="/post_img.webp"
-          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          title="A framework for identifying and prioritizing the risk asessment of Endocrine Disrupting Chemicals (EDCs)"
+          img="/EDCs.webp"
+          desc="Keywords: Endocrine Disruption, Toxicology, In Silico, QSAR, Machine Learning, NAMs, Risk Assessment, Chemo-informatics, Environmental Science, Adverse outcome pathways (AOPs)"
           url="#"
-          badge="NEW"
         />
         <div class="divider my-0"></div>
         <HorizontalCard
-        title="Demo Project 2"
-        img="/post_img.webp"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        title="Sex dimorphism and temporal dynamics of the tanycyte connectome according to changes in metabolic state"
+        img="/Tanycytes.webp"
+        desc="Keywords: Neurosciences, Energy balance, Bioinformatics, Connectomics, Hypothalamus, Neuroendocrinology"
         url="#"
       />
         <div class="divider my-0"></div>
         <HorizontalCard
-        title="Demo Project 3"
-        img="/post_img.webp"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        title="Single-cell heterogeneity and plasticity of 3V ependyma during energy imbalance"
+        img="/Tanycytes2.webp"
+        desc="Keywords: Neurosciences, Energy balance, Bioinformatics, Connectomics, Hypothalamus, Neuroendocrinology"
         url="#"
-        badge="FOSS"
       />
 
 
-        <div>
-          <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-        </div>
-
-        {
-          last_posts.map((post) => (
-            <HorizontalCard
-              title={post.data.title}
-              img={post.data.heroImage}
-              desc={post.data.description}
-              url={"/blog/" + post.slug}
-              target="_self"
-              badge={post.data.badge}
-            />
-            <div class="divider my-0"></div>
-          ))
-        }
 
 </BaseLayout>
