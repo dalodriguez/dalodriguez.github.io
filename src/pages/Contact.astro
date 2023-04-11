@@ -7,6 +7,7 @@ const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 
+const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout>
