@@ -4,8 +4,8 @@ import sitemap from '@astrojs/sitemap';
 
 import tailwind from "@astrojs/tailwind";
 
-// https://astro.build/config
+// https://dalodriguez.github.io
 export default defineConfig({
-  site: 'https://astro-modern-personal-website.netlify.app',
+  site: 'https://dalodriguez.github.io',
   integrations: [mdx(), sitemap(), tailwind()]
 });
