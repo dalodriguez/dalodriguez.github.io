@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+---
+
+<BaseLayout>
+
+ <div class="py-2"><text class="text-lg"> <p align="justify">   <b> David Lopez Rodriguez  </b> </p> </text> </div>
+ <div class="py-2"><text class="text-lg"> <p align="justify">   <b> Email </b> david.lopezrodriguez@unil.ch </p> </text> </div>
+ <div class="py-2"><text class="text-lg"> <p align="justify">   <b> Github </b> https://github.com/dalodriguez </p> </text> </div>
+ <div class="py-2"><text class="text-lg"> <p align="justify">   <b> ResearchGate </b> https://www.researchgate.net/profile/David-Lopez-Rodriguez-3 </p> </text> </div>
+ <div class="py-2"><text class="text-lg"> <p align="justify">   <b> Linkedin </b> https://www.linkedin.com/in/david-lopez-rodriguez-02634a266/ </p> </text> </div>
+ <div class="py-2"><text class="text-lg"> <p align="justify">   <b> Lausanne University </b> https://www.unil.ch/dsb/home/menuinst/groupes-de-recherche/fanny-langlet.html </p> </text> </div>
+ <div class="py-2"><text class="text-lg"> <p align="justify">   <b> ORCID </b> https://orcid.org/0000-0001-5420-447X </p> </text> </div>
+ <div class="py-2"><text class="text-lg"> <p align="justify">   <b> Google Scholar </b> https://scholar.google.com/citations?user=o_o5ZVcAAAAJ&hl=fr&oi=ao </p> </text> </div>
+
+
+
+</BaseLayout>
