@@ -3,113 +3,220 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
-<BaseLayout title = "Resume">
+<BaseLayout title = "CV - David Lopez Rodriguez">
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Profile</div>
   </div>
 
-  <div class="mb-10 text-justify">
-    Engineer in Informatics Science with 6 years + of experience in software development. Dominion of various programming
-    languages, frameworks, CMS and graphics engines. Experience in WEB design and development. Work with Data Base handled
-    systems, as well as design, normalization and migration. Knowledge of work with graphic design tools for image
-    manipulation , User Interfaces design, Web sites, logos and other ones.
+  <div class="mb-5 text-justify">
+    Experienced and multidisciplinar scientist with a background in toxicology, biology, environmental and computational sciences. 
+    Skilled in bioinformatics, computational biology and chemoinformatics with a demonstrated history of working in academia. 
+    Proficient in python, R, version control, among others. Currently, my focus lies in generating machine learning tools to identify and 
+    prioritize the risk assessments of environmental chemicals.
+  </div>
+
+  <div class="mb-10">
+    <div class="mb-5"><div class="text-3xl w-full font-bold">Skills</div> </div>
+  <ul class="list-disc md:columns-4 columns-2 mx-6">
+    <li>R</li>
+    <li>Pyhton</li>
+    <li>UNIX</li>
+    <li>High-performance computing (HPC)</li>
+    <li>Machine learning</li>
+    <li>Computational biology</li>
+    <li>Molecular biology</li>
+    <li>Bioinformatics</li>
+    <li>qPCR</li>
+    <li>RNAseq & library preparation</li>
+    <li>scRNAseq</li>
+    <li>Epigenetics</li>
+    <li>FACS</li>
+    <li>ChipSEQ</li>
+    <li>Cut&Run</li>
+    <li>Advanced Statistics</li>
+    <li>Chemo-informatics</li>
+    <li>Version control (Git)</li>
+    <li>Epigenetics</li>
+    <li>Toxicology</li>
+    <li>Risk asessment</li>
+    <li>Neuroendocrinology</li>
+    <li>Adobe Photoshop</li>
+    <li>Web design: astro</li>
+    <li>Physiology</li>
+  </ul>
+    </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Employment history </div>
+  </div>
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Postdoctoral fellow - Langlet's laboratory"
+      subtitle="From 2021 at University of Lausanne, Switzerland"
+      desc="Role as bioinformatician and biologist, development of novel methods to decipher the role of cell-cell communication in the neuroendocrine control of energy balance. Technologies: scRNAseq, transcriptomics, tracing, cell-cell communication, R, Python, HPC, machine learning."
+    />
+    <TimeLineElement
+      title="Postdoctoral fellow - H2020 FREIA Project"
+      subtitle="From 2020 to 2021 at University of Liege, Belgium"
+      desc="Data analysis of transcriptomics and biological data to decipher neuroendocrine biomarkers of Endocrine Disrupting Chemical developmental exposures. Technologies: RNAseq, transcriptomics, data analysis, R, Python"
+    />
   </div>
 
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Education</div>
   </div>
-
   <div class="time-line-container grid gap-4 mb-10">
-    <TimeLineElement
-      title="Technician Information-Technology"
-      subtitle="2006 to 2009 at Osvaldo Herrera Polytechnic institute, Habana, Cuba"
+     <TimeLineElement
+      title="Micro-bachelor degree (60 ECTS) in Sustainability and Strategies Against Climate Change"
+      subtitle="2016 to 2023 at UNED, Spain"
     />
     <TimeLineElement
-      title="Informatics Science Engineer"
-      subtitle="2010 to 2015 at University of Informatics Science (UCI), Habana, Cuba"
+      title="PhD in Biomedical Sciences"
+      subtitle= "2016 to 2020 at University of Liege (ULIEGE), Belgium  blabla" 
+    />
+    <TimeLineElement
+      title="M.Sc. in Neuroscience and Behavioral Psychopharmacology"
+      subtitle="2013 to 2015 at University of Liege (ULIEGE), Belgium"
+    />
+       <TimeLineElement
+      title="B.Sc. Degree in Psychology"
+      subtitle="2008 to 2013 at University of La Laguna, Canary Islands, Spain"
     />
   </div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
+  
+   <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Teaching experience</div>
+  </div>
+  <div class="time-line-container grid gap-4 mb-10">
+     <TimeLineElement
+      title="Lecture on 'Endocrine Disrupting Chemicals (EDCs)'"
+      subtitle="Participation in the course 'Impact of pollution on Human Health' -  University of Lausanne, Switzerland"
+      desc="Course for students at the Medicine and Nursing school. Invited by Dr. Busiah Kanetee & Dr. Aurélie Berthet"
+    />
+    <TimeLineElement
+      title="Lecture on 'Human Toxicology'"
+      subtitle= "Participation in the course 'Environmental Toxicology' - University of Lausanne, Switzerland" 
+      desc="Course for master students at the Faculty of Environmental Sciences. Invited by Dr. Nathalie Chèvre"
+    />
+    <TimeLineElement
+      title="Lecture on 'Female puberty: the role of epigenetics and environmental factors'"
+      subtitle= "Participation in the course 'Neuroendocrinology' - National Autonomous University of Mexico (UNAM), Mexico" 
+      desc="Course for master students at the Faculty of Biomedical Sciences. Invited by Dr. Rebeca Corona"
+    />
   </div>
 
-  <div class="time-line-container mb-10">
-    <TimeLineElement
-      title="UI Designer and Developer at Integral Access Control System (Thesis)"
-      subtitle="From 2015 at XETID, Habana, Cuba"
-      desc="System multiplatform that includes the steps of a company's personnel, the structure and composition thereof, as well as a powerful designer of credentials and module of control of access. Outspread at the MINFAR and another entities of the country. Technologies: C++, Qt Framework, Subversión, Visual Paradigm, PostgreSQL, Jmeter"
-    />
-    <TimeLineElement
-      title="Web Developer at Integral Oil Drilling System 2.0"
-      subtitle="From 2015 to 2016 at CEDIN, UCI, Habana, Cuba"
-      desc="System of steps of process of perforation of oil wells. Outspread in the direction of Intervención of Wells and various wells of drilling of the Occident of the country. Generate reports and graphs of process of perforation making use of data mining. Technologies: Php,Symfony 2.7 , Subversión, PostgreSQL, HigthChart, Ireport, Boostrap 2, JQuery, HTML,CSS, JavaScript"
-    />
-    <TimeLineElement
-      title="Full Stack Dev, Software Architect and Project Leader at Integral Oil Drilling System 3.0"
-      subtitle="From 2016 to 2017 at CEDIN, UCI, Habana, Cuba"
-      desc="System of steps of process of perforation of oil wells. Outspread in the direction of Intervención of Wells and various wells of drilling of the Occident of the country. Generate reports and graphs of process of perforation making use of data mining. Technologies: Php,Symfony 2.8 , Gitlab, PostgreSQL, HigthChart, Boostrap 2, JQuery, HTML,CSS, JavaScript"
-    />
-    <TimeLineElement
-      title="Full Stack Dev, UI/UX Designer and Software Architect at Primary Information System"
-      subtitle="From 2017 to 2018 at CEDIN, UCI, Habana, Cuba"
-      desc="System of steps of primary information at a company. personnel's steps, control of access, impression of credentials, steps of locales, structure and composition. Technologies: Php,Symfony 3.3 , Gitlab, PostgreSQL, , Boostrap 3, JQuery, HTML,CSS, JavaScript"
-    />
+         <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Awards, Grants and Fellowships</div>
   </div>
+  <div class="time-line-container grid gap-4 mb-10">
+     <TimeLineElement title="Ph.D. Thesis Award"  subtitle="2021 - Society of Neuroendocrinology (SNE, France)" />
+     <TimeLineElement title="Postdoctoral Travel Grant"  subtitle="2021 - Léon Fredericq Foundation (FLF, Belgium) for carrying out postdoctoral research at the laboratory of Fanny Langlet (UNIL, Lausanne, Switzerland)" />
+     <TimeLineElement title="Short-term Postdoctoral Grant"  subtitle="2021 - Wallonie-Bruxelles Federation (FWB, Belgium)  for carrying out postdoctoral research at the laboratory of Fanny Langlet (UNIL, Lausanne, Switzerland)" />
+     <TimeLineElement title="Research stay Grant"  subtitle="2020  - University of Liège for a 3-month research stay in the laboratory of Alejandro Lomniczi (OHSU, Portland, OR, USA)" />
+     <TimeLineElement title="Operating grant"  subtitle="2019 - Leon Fredericq Foundation" />
+     <TimeLineElement title="Outstanding Abstract Award"  subtitle="2019 - Endocrine Society, during the ENDO2019 meeting in New Orleans (LA, USA)" />
+     <TimeLineElement title="Early Career Forum and Travel Award"  subtitle="2019 - Endocrine Society, during the ENDO2019 meeting in New Orleans (LA, USA)" />
+     <TimeLineElement title="Research stay Grant"  subtitle="2018 - Léon Fredericq Foundation (FLF, Belgium) for a 3-month research stay in the laboratory of Alejandro Lomniczi (OHSU, Portland, OR, USA)" />         
+     <TimeLineElement title="Research stay Grant"  subtitle="2018 - Rotary Club (District 1630) for a 3-month research stay in the laboratory of Alejandro Lomniczi (OHSU, Portland, OR, USA)" />
+     <TimeLineElement title="François Mignolet Award"  subtitle="2018 - Leon Fredericq Foundation" />
+      <TimeLineElement title="Operating grant"  subtitle="2017 - Leon Fredericq Foundation" />
+      <TimeLineElement title="Non-FREIA Ph.D. program scholarship"  subtitle="2016-2020 - University of Liège (Belgium) " />
+      <TimeLineElement title="Master’s program  scholarship"  subtitle="2013-2015 - University of Liège (Belgium) " />
+      <TimeLineElement title="ERASMUS program scholarship"  subtitle="2012-2013 - Catholic University of Louvain (UCL, Belgium)" />
+      <TimeLineElement title="Bachelor’s scholarships"  subtitle="2008-2013 - Ministry of Education, Culture and Sports (Spain)" />
+  </div>
+
+
+     <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Participation in conferences</div>
+  </div>
+  <div class="time-line-container grid gap-4 mb-10">
+     <TimeLineElement title="Society for Behavioral Neuroendocrinology meeting (SBN)"  subtitle="2019 - Poster presentation - Bloomington, Indiana, USA" />
+     <TimeLineElement title="European Congress for Endocrinology (ECE)"  subtitle="2019 - Oral communication  - Lyon, France" />
+      <TimeLineElement title="Endocrine Society meeting"  subtitle="2019 - Oral communication - New Orleans, Louisiana, USA" />
+     <TimeLineElement title="Pan American Neuroendocrine Society (PANS)"  subtitle="2019 - Oral communication - New Orleans, Louisiana, USA" />
+      <TimeLineElement title="International Congress for Neuroendocrinology (ICN) "  subtitle="2018 - Oral communication - Toronto, Canada" />
+     <TimeLineElement title="European Doctoral College on Environment and Health meeting (EDCEH)"  subtitle="2018 - Oral communication - Rennes, France" />
+      <TimeLineElement title="International Days of Toxicology  (JIT)"  subtitle="2017 - Oral communication - Liège, Belgium" />
+     <TimeLineElement title="Copenhagen Workshop on Endocrine Disruptors (COW)"  subtitle="2017 - Oral communication - Copenhaguen, Denmark" />
+      <TimeLineElement title="EURON Ph.D. days"  subtitle="2016 - Poster presentation - Lille, France" />
+     <TimeLineElement title="Society for Neuroendocrinology meeting (SNE)"  subtitle="2016 -  Oral communication - Corte, Corsica, France" />
+  </div>
+
+
+   <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Reviewing activity</div>
+  </div>
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="https://www.frontiersin.org/journals/psychiatry" target="_blank">Reviewer for Frontiers in Psychiatry</a>
+    </li>
+    <li>
+      <a href="https://www.karger.com/journal/home/223855" target="_blank">Reviewer for Neuroendocrinology</a>
+    </li>
+  </ul>
+
+
+     <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Active membership</div>
+  </div>
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="https://www.endocrinology.org/" target="_blank">2023-Today: Member of the Society for Endocrinology (UK)</a>
+    </li>
+    <li>
+      <a href="https://www.neuroendocrinologie.fr/" target="_blank">2016-Today: Member of the Society for Neuroendocrinology (France)</a>
+    </li>
+        <li>
+      <a href="https://www.endocrine.org/" target="_blank">2018-2021: Member of the Endocrine Society (USA)</a>
+    </li>
+        <li>
+      <a href="https://www.ese-hormones.org/" target="_blank">2018-2020: Member of the European Society for Endocrinology (EU)</a>
+    </li>
+        <li>
+      <a href="https://sbn.org/home.aspx" target="_blank">2018-2020: Member of the Society for Behavioral Neuroendocrinology (USA)</a>
+
+  </ul>
+
+
+
+     <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Language skills</div>
+  </div>
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a target="_blank">Spanish: Native</a>
+    </li>
+    <li>
+         <a target="_blank">English: C2</a>
+    </li>
+        <li>
+        <a target="_blank">French: C2</a>
+    </li>
+     
+  </ul>
+
+
+      <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Institutional responsabilities</div>
+  </div>
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a target="_blank">2009-2012: Member of the delegation of students of the Faculty of Psychology (University of La Laguna, Spain)</a>
+    </li>
+   
+  </ul>
+
 
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Certifications</div>
   </div>
-
   <ul class="list-disc mx-6 mb-10 grid gap-2">
     <li>
-      <a href="https://www.efset.org/cert/DxtNKG" target="_blank"> EF SET English Certificate 74/100 (C2 Proficient)</a>
-    </li>
-    <li>
-      <a href="https://certiprof.com/pages/scrum-foundation-professional-certificate-sfpc-en-sp" target="_blank"> Scrum Foundation Professional Certificate (SFPC)</a>
+      <a href="https://felasa.eu/" target="_blank"> FELASA certificate</a>
     </li>
   </ul>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
-  </div>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Spanish (Native)</li>
-    <li>English (C2)</li>
-    <li>JavaScript</li>
-    <li>C++</li>
-    <li>PHP</li>
-    <li>Ruby</li>
-    <li>Postgres SQL</li>
-    <li>MySQL</li>
-    <li>CSS</li>
-    <li>SASS</li>
-    <li>HTML</li>
-    <li>Node.js</li>
-    <li>Ruby on Rails</li>
-    <li>AngularJS</li>
-    <li>VUE</li>
-    <li>Astro</li>
-    <li>Symfony 3</li>
-    <li>Yii2</li>
-    <li>Bootstrap</li>
-    <li>Taildwind</li>
-    <li>JQuery</li>
-    <li>Wordpress</li>
-    <li>Git</li>
-    <li>Jira</li>
-    <li>Trello</li>
-    <li>BaseCamp</li>
-    <li>Scrum</li>
-    <li>Shape Up</li>
-    <li>LeanStartup</li>
-    <li>UI Design</li>
-    <li>WEB Design</li>
-    <li>Logo Design</li>
-    <li>Image Manipulation</li>
-    <li>Office Suite</li>
-    <li>Adobe Photoshop</li>
-    <li>KdenLive</li>
-  </ul>
 </BaseLayout>

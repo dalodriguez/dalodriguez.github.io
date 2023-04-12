@@ -1,12 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github\\workflows",
     "\\public",
     "\\src",
+    "\\src\\components",
     "\\src\\components\\cv",
-    "\\src\\pages"
+    "\\src\\content\\store"
   ],
-  "SelectedNode": "\\src\\pages\\index.astro",
+  "SelectedNode": "\\src\\components\\Header.astro",
   "PreviewInSolutionExplorer": false
 }
