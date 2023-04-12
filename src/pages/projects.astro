@@ -4,48 +4,61 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
 <BaseLayout title = "Projects">
-  <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
-  </div>
 
-  <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
+ <div>
+          <div class="text-3xl w-full font-bold mb-2">Current projects </div>
+        </div>
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
-  </div>
+        <HorizontalCard
+          title="A framework for identifying and prioritizing the risk asessment of Endocrine Disrupting Chemicals (EDCs)"
+          img="/EDCs.webp"
+          desc="Keywords: Endocrine Disruption, Toxicology, In Silico, QSAR, Machine Learning, NAMs, Risk Assessment, Chemo-informatics, Environmental Science, Adverse outcome pathways (AOPs)"
+           url="p1"
+        />
+        <div class="divider my-0"></div>
+        <HorizontalCard
+        title="Sex dimorphism and temporal dynamics of the tanycyte connectome according to changes in metabolic state"
+        img="/Tanycytes.webp"
+        desc="Keywords: Neurosciences, Energy balance, Bioinformatics, Connectomics, Hypothalamus, Neuroendocrinology"
+        url="#"
+      />
+        <div class="divider my-0"></div>
+        <HorizontalCard
+        title="Single-cell heterogeneity and plasticity of 3V ependyma during energy imbalance"
+        img="/Tanycytes2.webp"
+        desc="Keywords: Neurosciences, Energy balance, Bioinformatics, Connectomics, Hypothalamus, Neuroendocrinology"
+        url="#"
+      />
 
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
+</div>
+
+<div>
+          <div class="text-3xl w-full font-bold mb-2">Past projects </div>
+        </div>
+
+        <HorizontalCard
+          title="A framework for identifying and prioritizing the risk asessment of Endocrine Disrupting Chemicals (EDCs)"
+          img="/EDCs.webp"
+          desc="Keywords: Endocrine Disruption, Toxicology, In Silico, QSAR, Machine Learning, NAMs, Risk Assessment, Chemo-informatics, Environmental Science, Adverse outcome pathways (AOPs)"
+          url="#"
+        />
+        <div class="divider my-0"></div>
+        <HorizontalCard
+        title="Sex dimorphism and temporal dynamics of the tanycyte connectome according to changes in metabolic state"
+        img="/Tanycytes.webp"
+        desc="Keywords: Neurosciences, Energy balance, Bioinformatics, Connectomics, Hypothalamus, Neuroendocrinology"
+        url="#"
+      />
+        <div class="divider my-0"></div>
+        <HorizontalCard
+        title="Single-cell heterogeneity and plasticity of 3V ependyma during energy imbalance"
+        img="/Tanycytes2.webp"
+        desc="Keywords: Neurosciences, Energy balance, Bioinformatics, Connectomics, Hypothalamus, Neuroendocrinology"
+        url="#"
+      />
+
+</div>
+
+
+ 
 </BaseLayout>
