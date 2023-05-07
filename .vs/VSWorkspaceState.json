@@ -3,7 +3,6 @@
     "",
     "\\.github",
     "\\.github\\workflows",
-    "\\public",
     "\\src",
     "\\src\\components",
     "\\src\\components\\cv",
@@ -11,6 +10,6 @@
     "\\src\\pages",
     "\\src\\styles"
   ],
-  "SelectedNode": "\\src\\pages\\p4.astro",
+  "SelectedNode": "\\src\\pages\\Contact.astro",
   "PreviewInSolutionExplorer": false
 }
