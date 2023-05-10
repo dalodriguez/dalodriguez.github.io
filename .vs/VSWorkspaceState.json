@@ -7,9 +7,10 @@
     "\\src\\components",
     "\\src\\components\\cv",
     "\\src\\content",
+    "\\src\\layouts",
     "\\src\\pages",
+    "\\src\\pages\\blog",
     "\\src\\styles"
   ],
-  "SelectedNode": "\\src\\pages\\cv.astro",
   "PreviewInSolutionExplorer": false
 }
