@@ -1,8 +1,6 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github",
-    "\\.github\\workflows",
     "\\src",
     "\\src\\components",
     "\\src\\components\\cv",
@@ -10,6 +8,7 @@
     "\\src\\layouts",
     "\\src\\pages",
     "\\src\\pages\\blog",
+    "\\src\\pages\\Timeline",
     "\\src\\styles"
   ],
   "PreviewInSolutionExplorer": false
