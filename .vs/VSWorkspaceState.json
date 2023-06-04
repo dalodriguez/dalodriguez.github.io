@@ -1,7 +1,6 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
     "\\src",
     "\\src\\components",
     "\\src\\components\\cv",
@@ -12,6 +11,6 @@
     "\\src\\pages\\Timeline",
     "\\src\\styles"
   ],
-  "SelectedNode": "\\src\\pages\\Publications.astro",
+  "SelectedNode": "\\src\\pages\\p10.astro",
   "PreviewInSolutionExplorer": false
 }
