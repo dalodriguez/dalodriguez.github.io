@@ -11,6 +11,6 @@
     "\\src\\pages\\Timeline",
     "\\src\\styles"
   ],
-  "SelectedNode": "\\src\\pages\\cv.astro",
+  "SelectedNode": "\\src\\components\\HorizontalCard.astro",
   "PreviewInSolutionExplorer": false
 }
