@@ -1,15 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\.github\\workflows",
+    "\\public",
     "\\src",
     "\\src\\components",
     "\\src\\components\\cv",
     "\\src\\content",
     "\\src\\layouts",
     "\\src\\pages",
-    "\\src\\pages\\blog",
-    "\\src\\pages\\Timeline",
     "\\src\\styles"
   ],
+  "SelectedNode": "\\public\\favicon.svg",
   "PreviewInSolutionExplorer": false
 }
