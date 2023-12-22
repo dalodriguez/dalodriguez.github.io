@@ -2,22 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
-<style>
-    {
-        box-sizing: border-box;
-    }
-    /* Set additional styling options for the columns*/
-    .column {
-    float: left;
-    width: 50%;
-    }
 
-    .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    }
-    </style>
 
 
 <BaseLayout title = "CV - David Lopez Rodriguez">
@@ -256,35 +241,17 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
 
 
-     <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Language skills</div>
-  </div>
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a target="_blank">Spanish: Native</a>
-    </li>
-    <li>
-         <a target="_blank">English: C2</a>
-    </li>
-        <li>
-        <a target="_blank">French: C2</a>
-    </li>
-     
-  </ul>
+     <div class="mb-5"><div class="text-3xl w-full font-bold">Language skills</div></div>
+          <ul class="list-disc mx-6 mb-10 grid gap-2">
+                    <li><a target="_blank">Spanish: Native</a></li>
+                    <li><a target="_blank">English: C2</a></li>
+                    <li><a target="_blank">French: C2</a></li> 
+          </ul>
 
 
-  
-
-
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
-  </div>
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="https://felasa.eu/" target="_blank"> FELASA certificate</a>
-    </li>
-  </ul>
-
+  <div class="mb-5"><div class="text-3xl w-full font-bold">Certifications</div> </div>
+          <ul class="list-disc mx-6 mb-10 grid gap-2">
+                    <li><a href="https://felasa.eu/" target="_blank"> FELASA certificate</a></li>
+          </ul>
 
 </BaseLayout>
