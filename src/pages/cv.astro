@@ -2,9 +2,6 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
-
-<BaseLayout title = "CV - David Lopez Rodriguez">
-
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-B2JEVNPCKR"></script>
 <script>
@@ -14,6 +11,45 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   gtag('config', 'G-B2JEVNPCKR');
 </script>
+
+
+
+    <style>
+       html {
+        scroll-behavior: smooth;
+            }
+        
+    </style>
+    
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" >
+      $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+    
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+      });
+    </script>
+
+
+
+<BaseLayout title = "CV - David Lopez Rodriguez">
+
+
+    <nav>
+      <a href="#section1">1</a> 
+      <a href="#section2">2</a> 
+      <a href="#section3">3</a>
+    </nav>
+
+    <section id="section1">1</section>
+    
+
+
+
+
+
 
 
   <div class="mb-5"><div class="text-3xl w-full font-bold">Profile</div></div>
@@ -132,6 +168,10 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     />
 
   </div>
+
+
+  <section id="section2" class="fifty">2</section>
+  <section id="section3">3</section>
 
   
    <div class="mb-5">
