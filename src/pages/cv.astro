@@ -3,6 +3,20 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
+<style>
+    /* Set additional styling options for the columns*/
+    .column {
+    float: left;
+    width: 50%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    </style>
+
 
 
 <BaseLayout title = "CV - David Lopez Rodriguez">
@@ -18,21 +32,13 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 </script>
 
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
-  </div>
+  <div class="mb-5"><div class="text-3xl w-full font-bold">Profile</div></div>
 
-  <div class="mb-5 text-justify">
-    Experienced and multidisciplinary scientist with a background in toxicology, biology, environmental and computational sciences. My main objective is to develop computational and bioinformatic tools that can expand scientific knowledge and make a valuable contribution to public health and society. 
-  </div>
+  <div class="mb-5 text-justify">Experienced and multidisciplinary scientist with a background in toxicology, biology, environmental and computational sciences. My main objective is to develop computational and bioinformatic tools that can expand scientific knowledge and make a valuable contribution to public health and society. </div>
 
-  <div class="mb-10">
-    <div class="mb-5"><div class="text-3xl w-full font-bold">Skills</div> </div>
+  <div class="mb-10"><div class="mb-5"><div class="text-3xl w-full font-bold">Skills</div> </div>
 
-
-
-
-  <ul class="list-disc md:columns-2 columns-1 mx-6">
+    <ul class="list-disc md:columns-2 columns-1 mx-6">
 
     <li><b>Toxicology </b></li>
     <li><b>Biostatistics / Advanced Statistics</b></li>
