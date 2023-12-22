@@ -1,8 +1,6 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github\\workflows",
-    "\\public",
     "\\src",
     "\\src\\components",
     "\\src\\components\\cv",
@@ -11,6 +9,6 @@
     "\\src\\pages",
     "\\src\\styles"
   ],
-  "SelectedNode": "\\public\\favicon.svg",
+  "SelectedNode": "\\src\\pages\\Contact.astro",
   "PreviewInSolutionExplorer": false
 }
