@@ -2,9 +2,6 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
-
-<BaseLayout title = "CV - David Lopez Rodriguez">
-
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-B2JEVNPCKR"></script>
 <script>
@@ -16,56 +13,144 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 </script>
 
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
-  </div>
+
+    <style>
+       html {
+        scroll-behavior: smooth;
+            }
+        
+    </style>
+    
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" >
+      $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+    
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+      });
+    </script>
+
+
+
+<BaseLayout title = "CV - David Lopez Rodriguez">
+<div style="text-align:center">
+    <nav style="background:#F2F7FF;">
+    <a>  |  </a> 
+      <a href="#section1" class="mb-5 text-justify"><b>Profile</b></a> <a>  |  </a> 
+      <a href="#section2"><b>Skills</b></a>    <a>  |  </a> 
+      <a href="#section3"><b>Employment History</b></a>    <a>  |  </a> 
+      <a href="#section4"><b>Education</b></a>    <a>  |  </a> 
+      <a href="#section5"><b>Teaching Experience</b></a>    <a>  |  </a> 
+      <a href="#section6"><b>Awards, Grants and Fellowships</b></a>    <a>  |  </a> 
+    </nav>
+    <nav style="background:#F2F7FF;"><a>  |  </a>
+      <a href="#section7"><b>Continuous Education</b></a>    <a>  |  </a> 
+      <a href="#section8"><b>Participation in Conferences</b></a>    <a>  |  </a> 
+      <a href="#section9"><b>Peer-reviewing</b></a>    <a>   |  </a> 
+    </nav>
+    <nav style="background:#F2F7FF;"><a>  |  </a>
+      <a href="#section10"><b>Active Membership</b></a>    <a>  |  </a> 
+      <a href="#section11"><b>Language Skills</b></a>    <a>  |  </a> 
+      <a href="#section12"><b>Certifications</b></a>    <a>  |  </a>
+    </nav>
+
+</div>
+    <div style="line-height:60%;"> <br></div>
+    <hr> 
+    <div style="line-height:160%;"> <br></div>
+    
+
+
+
+
+
+
+   <section id="section1"></section>
+  <div class="mb-5"><div class="text-3xl w-full font-bold">Profile</div></div>
 
   <div class="mb-5 text-justify">
-    Experienced and multidisciplinary scientist with a background in toxicology, biology, environmental and computational sciences. My main objective is to develop computational and bioinformatic tools that can expand scientific knowledge and make a valuable contribution to public health and society. 
+  
+  Experienced and multidisciplinary scientist & consultant with a background in toxicology, biology, environmental 
+  and computational sciences. My main objective is to develop computational and bioinformatic tools that 
+  can expand scientific knowledge and make a valuable contribution to public health and society. My goal 
+  is to achieve a comprehensive understanding of the biological mechanisms and risks associated with 
+  various exposures to humans and the environment.
   </div>
 
-  <div class="mb-10">
-    <div class="mb-5"><div class="text-3xl w-full font-bold">Skills</div> </div>
-  <ul class="list-disc md:columns-3 columns-1 mx-6">
-    <li>Toxicology</li>
-    <li>Computational biology</li>
-    <li>Molecular biology</li>
-    <li>Bioinformatics</li>
-    <li>Risk asessment</li>
-    <li>Neuroendocrinology</li>
-    <li>Epigenetics</li>
-    <li>Advanced Statistics</li>
-    <li>Chemo-informatics</li>
-    <li>Physiology</li>
-    <li>R (RStudio)</li>
-    <li>Python (Anaconda, PyCharm)</li>
-    <li>UNIX/Shell</li>
-    <li>High-perf. computing (HPC)</li>
-    <li>Machine learning</li>
-    <li>QSAR</li>
-    <li>In silico methods</li>
-    <li>Version control (Git)</li>
-    <li>Adobe Photoshop</li>
-    <li>Web design </li>
-    <li>scRNAseq</li>
-    <li>RNAseq</li>
-    <li>qPCR</li>
-    <li>FACS</li>
-    <li>ChipSEQ</li>
-    <li>Cut&Run</li>
-    <li>IHC</li>
-    <li>WB</li>
-    <li>Microscopy</li>
-    <li>ELISA</li>
+      <section id="section2"></section>
+  <div class="mb-10"><div class="mb-5"><div class="text-3xl w-full font-bold">Skills</div> </div>
+
+    <ul class="list-disc md:columns-2 columns-1 mx-6">
+
+    <li><b>Toxicology </b></li>
+        <div style="line-height:60%;"> <br></div>
+    <li><b>Biostatistics / Advanced Statistics</b></li>
+     <div style="line-height:60%;"> <br></div>
+    <li><b>Epidemiology</b></li>
+     <div style="line-height:60%;"> <br></div>
+    <li><b>Bioinformatics & computational biology</b>
+            <ol style="list-style-type: circle; padding-bottom: 0;">
+                  <li style="margin-left:2em">Multiomics: scRNAseq, ChIPSeq,...</li>
+                  <li style="margin-left:2em; padding-bottom: 0;">R (RStudio)</li>
+                  <li style="margin-left:2em; padding-bottom: 0;">Python (Anaconda, PyCharm)</li>
+                  <li style="margin-left:2em; padding-bottom: 0;">C++</li>
+                  <li style="margin-left:2em; padding-bottom: 0;">UNIX/Shell</li>
+                  <li style="margin-left:2em; padding-bottom: 0;">High-performance Computing (HPC)</li>
+                  <li style="margin-left:2em; padding-bottom: 0;">Machine Learning</li>
+                  <li style="margin-left:2em; padding-bottom: 0;">RShiny</li>
+                  <li style="margin-left:2em; padding-bottom: 0;">Version Control (Git)</li>
+             </ol>
+    </li>
+
+
+    <li><b>Molecular biology & Epigenetics</b>
+            <ol style="list-style-type: circle; padding-bottom: 0;">
+                  <li style="margin-left:2em">qPCR, CUT&RUN, FACS,...</li>
+             </ol>
+    </li>
+     <div style="line-height:60%;"> <br></div>
+    <li><b>Chemo-informatics</b>
+                <ol style="list-style-type: circle; padding-bottom: 0;">
+                  <li style="margin-left:2em">QSAR</li>
+                   <li style="margin-left:2em">In Silico Methods</li>
+             </ol></li>
+              <div style="line-height:60%;"> <br></div>
+    <li><b>Neuroendocrinology & Physiology</b>
+             <ol style="list-style-type: circle; padding-bottom: 0;">
+                    <li style="margin-left:2em">ICH, WB, Microscopy, ELISA,...</li>
+             </ol></li>
+              <div style="line-height:60%;"> <br></div>
+    <li><b>Web design</b>
+             <ol style="list-style-type: circle; padding-bottom: 0;">
+                    <li style="margin-left:2em">RShiny</li>
+                    <li style="margin-left:2em">WordPress</li>
+                    <li style="margin-left:2em"> Photoshop, InDesign, Illustrator</li>
+                    <li style="margin-left:2em">Scientific Illustration</li>
+             </ol></li>
+              <div style="line-height:60%;"> <br></div>
+    <li><b>Scientific writing</b></li>
   </ul>
     </div>
 
+        <section id="section3"></section>
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Employment history </div>
+    <div class="text-3xl w-full font-bold">Employment History </div>
   </div>
  
  
  <div class="time-line-container mb-10">
+      <TimeLineElement
+      title="Bioinformatics & Environmental Sciences Consultant"
+    />
+
+   <TimeLineElement
+      title="Project Coordinator - Pesticide Monitoring "
+      subtitle="From 2024 - Today at Environmental Science & Research Consulting (as Independent Consultant)"
+      desc="Project Coordinator of the project 'Pesticide Exposure Assessment of the Swiss Non-Occupational Sensitive Population' (www.pestizidmonitoring.ch)"
+    />
+
      <TimeLineElement
       title="EFSA - Scientific and Technical Support Panel"
       subtitle="From 2023 to 2027"
@@ -83,6 +168,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     />
   </div>
 
+      <section id="section4"></section>
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Education</div>
   </div>
@@ -102,32 +188,47 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   </div>
 
-  
+
+
+
+      <section id="section5"></section>
    <div class="mb-5">
     <div class="text-3xl w-full font-bold">Teaching experience</div>
   </div>
   <div class="time-line-container grid gap-4 mb-10">
-     <TimeLineElement
+    <TimeLineElement
       title="Lecture on 'Endocrine Disrupting Chemicals (EDCs)'"
-      subtitle="Participation in the course 'Impact of pollution on Human Health' -  University of Lausanne, Switzerland"
+      subtitle="2024 - Participation in the course 'Impact of pollution on Human Health' -  University of Lausanne, Switzerland"
       desc="Course for students at the Medicine and Nursing school. Invited by Dr. Busiah Kanetee & Dr. Aurélie Berthet"
     />
     <TimeLineElement
       title="Lecture on 'Human Toxicology'"
-      subtitle= "Participation in the course 'Environmental Toxicology' - University of Lausanne, Switzerland" 
+      subtitle= "2023 - Participation in the course 'Environmental Toxicology' - University of Lausanne, Switzerland" 
+      desc="Course for master students at the Faculty of Environmental Sciences. Invited by Dr. Nathalie Chèvre"
+    />
+    <TimeLineElement
+      title="Lecture on 'Endocrine Disrupting Chemicals (EDCs)'"
+      subtitle="2023 - Participation in the course 'Impact of pollution on Human Health' -  University of Lausanne, Switzerland"
+      desc="Course for students at the Medicine and Nursing school. Invited by Dr. Busiah Kanetee & Dr. Aurélie Berthet"
+    />
+    <TimeLineElement
+      title="Lecture on 'Human Toxicology'"
+      subtitle= "2022 - Participation in the course 'Environmental Toxicology' - University of Lausanne, Switzerland" 
       desc="Course for master students at the Faculty of Environmental Sciences. Invited by Dr. Nathalie Chèvre"
     />
     <TimeLineElement
       title="Lecture on 'Female puberty: the role of epigenetics and environmental factors'"
-      subtitle= "Participation in the course 'Neuroendocrinology' - National Autonomous University of Mexico (UNAM), Mexico" 
+      subtitle= "2020 - Participation in the course 'Neuroendocrinology' - National Autonomous University of Mexico (UNAM), Mexico" 
       desc="Course for master students at the Faculty of Biomedical Sciences. Invited by Dr. Rebeca Corona"
     />
   </div>
 
+      <section id="section6"></section>
          <div class="mb-5">
     <div class="text-3xl w-full font-bold">Awards, Grants and Fellowships</div>
   </div>
   <div class="time-line-container grid gap-4 mb-10">
+     <TimeLineElement title="Postdoctoral Fellowship"  subtitle="2023 - Wallonie-Bruxelles Federation (FWB, Belgium)" />
      <TimeLineElement title="Ph.D. Thesis Award"  subtitle="2021 - Society of Neuroendocrinology (SNE, France)" />
      <TimeLineElement title="Postdoctoral Travel Grant"  subtitle="2021 - Léon Fredericq Foundation (FLF, Belgium) for carrying out postdoctoral research at the laboratory of Fanny Langlet (UNIL, Lausanne, Switzerland)" />
      <TimeLineElement title="Short-term Postdoctoral Grant"  subtitle="2021 - Wallonie-Bruxelles Federation (FWB, Belgium)  for carrying out postdoctoral research at the laboratory of Fanny Langlet (UNIL, Lausanne, Switzerland)" />
@@ -145,6 +246,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
       <TimeLineElement title="Bachelor’s scholarships"  subtitle="2008-2013 - Ministry of Education, Culture and Sports (Spain)" />
   </div>
 
+      <section id="section7"></section>
      <div class="mb-5">
     <div class="text-3xl w-full font-bold">Continuous Education</div>  </div> 
   <ul class="list-disc mx-6 mb-10 grid gap-2"> 
@@ -165,100 +267,57 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   <li> <a target="_blank">Statistics 1. Resal, University of Lausanne (Switzerland) (1 day)  </a> </li>
   <li> <a target="_blank"> Statistics 2. Resal, University of Lausanne (Switzerland) (1 day) </a> </li>
   </ul>
-     <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Participation in conferences</div>
-  </div>
-  <div class="time-line-container grid gap-4 mb-10">
-     <TimeLineElement title="Society for Neuroendocrinology meeting (SNE)"  subtitle="2021 -  Oral communication - Online" />
-     <TimeLineElement title="Society for Behavioral Neuroendocrinology meeting (SBN)"  subtitle="2019 - Poster presentation - Bloomington, Indiana, USA" />
-     <TimeLineElement title="European Congress for Endocrinology (ECE)"  subtitle="2019 - Oral communication  - Lyon, France" />
-      <TimeLineElement title="Endocrine Society meeting"  subtitle="2019 - Oral communication - New Orleans, Louisiana, USA" />
-     <TimeLineElement title="Pan American Neuroendocrine Society (PANS)"  subtitle="2019 - Oral communication - New Orleans, Louisiana, USA" />
-      <TimeLineElement title="International Congress for Neuroendocrinology (ICN) "  subtitle="2018 - Oral communication - Toronto, Canada" />
-     <TimeLineElement title="European Doctoral College on Environment and Health meeting (EDCEH)"  subtitle="2018 - Oral communication - Rennes, France" />
-      <TimeLineElement title="International Days of Toxicology  (JIT)"  subtitle="2017 - Oral communication - Liège, Belgium" />
-     <TimeLineElement title="Copenhagen Workshop on Endocrine Disruptors (COW)"  subtitle="2017 - Oral communication - Copenhaguen, Denmark" />
-      <TimeLineElement title="EURON Ph.D. days"  subtitle="2016 - Poster presentation - Lille, France" />
-     <TimeLineElement title="Society for Neuroendocrinology meeting (SNE)"  subtitle="2016 -  Oral communication - Corte, Corsica, France" />
-  </div>
-
-
-   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Peer-reviewing</div>
-  </div>
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-  <li>
-      <a href="https://www.cell.com/molecular-therapy-family/home" target="_blank">Reviewer for CellPress Molecular Therapy </a>
-    </li>
-
-   <li>
-      <a href="https://www.karger.com/journal/home/223855" target="_blank">Reviewer for Neuroendocrinology</a>
-    </li>
-    <li>
-      <a href="https://www.frontiersin.org/journals/psychiatry" target="_blank">Reviewer for Frontiers in Psychiatry</a>
-    </li
-      <li>
-      <a href="https://www.frontiersin.org/journals/behavioral-neuroscience" target="_blank">Reviewer for Frontiers in Behavioral Neuroscience</a>
-    </li>
-   
-  </ul>
-
-
-     <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Active membership</div>
-  </div>
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="https://www.swisstox.ch/" target="_blank">2023-Today: Member of the Swiss Society of Toxicology </a>
-    </li>
-    <li>
-      <a href="https://www.endocrinology.org/" target="_blank">2023-Today: Member of the Society for Endocrinology (UK)</a>
-    </li>
-    <li>
-      <a href="https://www.neuroendocrinologie.fr/" target="_blank">2016-Today: Member of the Society for Neuroendocrinology (France)</a>
-    </li>
-        <li>
-      <a href="https://www.endocrine.org/" target="_blank">2018-2021: Member of the Endocrine Society (USA)</a>
-    </li>
-        <li>
-      <a href="https://www.ese-hormones.org/" target="_blank">2018-2020: Member of the European Society for Endocrinology (EU)</a>
-    </li>
-        <li>
-      <a href="https://sbn.org/home.aspx" target="_blank">2018-2020: Member of the Society for Behavioral Neuroendocrinology (USA)</a>
-      </li>
-  </ul>
-
-
-
-     <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Language skills</div>
-  </div>
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a target="_blank">Spanish: Native</a>
-    </li>
-    <li>
-         <a target="_blank">English: C2</a>
-    </li>
-        <li>
-        <a target="_blank">French: C2</a>
-    </li>
-     
-  </ul>
-
-
   
+      <section id="section8"></section>
+  <div class="mb-5"><div class="text-3xl w-full font-bold">Participation in Conferences</div></div>
+      <div class="time-line-container grid gap-4 mb-10">
+             <TimeLineElement title="Society for Neuroendocrinology meeting (SNE)"  subtitle="2021 -  Oral communication - Online" />
+             <TimeLineElement title="Society for Behavioral Neuroendocrinology meeting (SBN)"  subtitle="2019 - Poster presentation - Bloomington, Indiana, USA" />
+             <TimeLineElement title="European Congress for Endocrinology (ECE)"  subtitle="2019 - Oral communication  - Lyon, France" />
+             <TimeLineElement title="Endocrine Society meeting"  subtitle="2019 - Oral communication - New Orleans, Louisiana, USA" />
+             <TimeLineElement title="Pan American Neuroendocrine Society (PANS)"  subtitle="2019 - Oral communication - New Orleans, Louisiana, USA" />
+             <TimeLineElement title="International Congress for Neuroendocrinology (ICN) "  subtitle="2018 - Oral communication - Toronto, Canada" />
+             <TimeLineElement title="European Doctoral College on Environment and Health meeting (EDCEH)"  subtitle="2018 - Oral communication - Rennes, France" />
+             <TimeLineElement title="International Days of Toxicology  (JIT)"  subtitle="2017 - Oral communication - Liège, Belgium" />
+             <TimeLineElement title="Copenhagen Workshop on Endocrine Disruptors (COW)"  subtitle="2017 - Oral communication - Copenhaguen, Denmark" />
+             <TimeLineElement title="EURON Ph.D. days"  subtitle="2016 - Poster presentation - Lille, France" />
+             <TimeLineElement title="Society for Neuroendocrinology meeting (SNE)"  subtitle="2016 -  Oral communication - Corte, Corsica, France" />
+      </div>
+
+          <section id="section9"></section>
+   <div class="mb-5"><div class="text-3xl w-full font-bold">Peer-reviewing</div></div>
+          <ul class="list-disc mx-6 mb-10 grid gap-2">
+                   <li><a href="https://www.nature.com/srep/" target="_blank">Reviewer for Nature Scientific Reports </a> </li>
+                   <li><a href="https://www.cell.com/molecular-therapy-family/home" target="_blank">Reviewer for CellPress Molecular Therapy </a></li>
+                   <li><a href="https://www.karger.com/journal/home/223855" target="_blank">Reviewer for Neuroendocrinology</a></li>
+                   <li><a href="https://www.frontiersin.org/journals/psychiatry" target="_blank">Reviewer for Frontiers in Psychiatry</a></li>
+                   <li><a href="https://www.frontiersin.org/journals/behavioral-neuroscience" target="_blank">Reviewer for Frontiers in Behavioral Neuroscience</a></li>
+          </ul>
+
+              <section id="section10"></section>
+     <div class="mb-5"> <div class="text-3xl w-full font-bold">Active Membership</div></div>
+          <ul class="list-disc mx-6 mb-10 grid gap-2">
+                    <li><a href="https://www.swisstox.ch/" target="_blank">2023-Today: Member of the Swiss Society of Toxicology </a></li>
+                    <li> <a href="https://www.endocrinology.org/" target="_blank">2023-Today: Member of the Society for Endocrinology (UK)</a></li>
+                    <li> <a href="https://www.neuroendocrinologie.fr/" target="_blank">2016-Today: Member of the Society for Neuroendocrinology (France)</a> </li>
+                    <li><a href="https://www.endocrine.org/" target="_blank">2018-2021: Member of the Endocrine Society (USA)</a></li>
+                    <li> <a href="https://www.ese-hormones.org/" target="_blank">2018-2020: Member of the European Society for Endocrinology (EU)</a></li>
+                    <li><a href="https://sbn.org/home.aspx" target="_blank">2018-2020: Member of the Society for Behavioral Neuroendocrinology (USA)</a></li>
+          </ul>
 
 
+              <section id="section11"></section>
+     <div class="mb-5"><div class="text-3xl w-full font-bold">Language Skills</div></div>
+          <ul class="list-disc mx-6 mb-10 grid gap-2">
+                    <li><a target="_blank">Spanish: Native</a></li>
+                    <li><a target="_blank">English: C2</a></li>
+                    <li><a target="_blank">French: C2</a></li> 
+          </ul>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
-  </div>
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="https://felasa.eu/" target="_blank"> FELASA certificate</a>
-    </li>
-  </ul>
-
+              <section id="section12"></section>
+  <div class="mb-5"><div class="text-3xl w-full font-bold">Certifications</div> </div>
+          <ul class="list-disc mx-6 mb-10 grid gap-2">
+                    <li><a href="https://felasa.eu/" target="_blank"> FELASA certificate</a></li>
+          </ul>
 
 </BaseLayout>
