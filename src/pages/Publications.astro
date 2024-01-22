@@ -3,19 +3,50 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title = "Publications - David Lopez Rodriguez">
+<style>
+  html {
+   scroll-behavior: smooth;
+       }
+   
+</style>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B2JEVNPCKR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" >
+ $(document).on('click', 'a[href^="#"]', function (event) {
+   event.preventDefault();
 
-  gtag('config', 'G-B2JEVNPCKR');
+   $('html, body').animate({
+       scrollTop: $($.attr(this, 'href')).offset().top
+   }, 500);
+ });
 </script>
 
 
+
+<BaseLayout title = "Publications - David Lopez Rodriguez">
+
+  <div style="text-align:center">
+    <nav style="background:#F2F7FF;">
+    <a>  |  </a> 
+      <a href="#section1" class="mb-5 text-justify"><b>PhD thesis</b></a> <a>  |  </a> 
+      <a href="#section2"><b>Manuscripts in preparation</b></a>    <a>  |  </a> 
+      <a href="#section3"><b>Peer-reviewed scientific articles</b></a>    <a>  |  </a> 
+      <a href="#section4"><b>Non-peer reviewed articles</b></a>    <a>  |  </a> 
+    </nav>
+    <nav style="background:#F2F7FF;"><a>  |  </a>
+      <a href="#section5"><b>Press releases</b></a>    <a>  |  </a> 
+      <a href="#section6"><b>Articles in the general press</b></a>    <a>  |  </a> 
+      <a href="#section7"><b>Master's Student Supervision</b></a>    <a>  |  </a> 
+    </nav>
+
+</div>
+    <div style="line-height:60%;"> <br></div>
+    <hr> 
+    <div style="line-height:160%;"> <br></div>
+
+
+
+    <section id="section1"></section>
   <div> <div class="text-2xl w-full font-bold mb-0">PhD thesis</div> </div>
   
   <div class="divider my-0"></div><p align="justify">
@@ -24,6 +55,8 @@ import HorizontalCard from "../components/HorizontalCard.astro";
  </p></a>
  <a href="https://drive.google.com/file/d/1krHdJQaA7Nar19DszodyQN1ibO5Vkfa7/view?usp=share_link" target="_blank"><text class="text-lg"> <b>Download</b> </text></p></a>
 
+
+ <section id="section2"></section>
      <div class="text-2xl w-full font-bold mb-0 mt-10">Manuscripts in preparation <font size="2"> (as of 07/23) </font>    </div>
   <div class="divider my-0"></div>
   
@@ -43,7 +76,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 
 
-
+<section id="section3"></section>
     <div class="text-2xl w-full font-bold mb-0 mt-10">Peer-reviewed scientific articles</div>
   <div class="divider my-0"></div>
  
@@ -81,7 +114,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
  </p></a>
 
 
-
+ <section id="section4"></section>
    <div class="text-2xl w-full font-bold mb-0 mt-10">Non-peer reviewed articles <font size="2"> (self-published) </font> </div>
   <div class="divider my-0"></div>
 
@@ -93,7 +126,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 
 
-
+  <section id="section5"></section>
     <div class="text-2xl w-full font-bold mb-0 mt-10">Press releases </div>
   <div class="divider my-0"></div>
 
@@ -103,6 +136,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <a class="text-lg" href="https://www.endocrine-abstracts.org/ea/0063/ea0063oc8.3"><i> University of Liege</i></a>
 
+<section id="section6"></section>
    <div class="text-2xl w-full font-bold mb-0 mt-10">Articles in the general press</div>
 
    <div class="divider my-0"></div><p align="justify"></p>
@@ -151,7 +185,9 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 <a class="text-lg" href=" https//www.telemundo.com/node/3252932"> Telemundo</a>
 </p>
 
+<section id="section7"></section>
 <div class="text-2xl w-full font-bold mb-0 mt-10">Master's Student Supervision   </div>
+<div class="divider my-0"></div>
 
       <ul class="list-disc mx-6 mb-10 grid gap-2">
                           <li><a >Marzia Campanile <i>(role as "co-supervisor")</i>. <b>Effects of lactational and gestational exposure to a polychlorinated biphenyl mixture (Aroclor1254) in the dentate gyrus of POMC-EGFP transgenic mice </b> (2019). GIGA-Neuroscience. University of Liege, Belgium </a> </li>
