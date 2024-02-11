@@ -10,6 +10,9 @@ const posts = (await getCollection('blog')).sort(
 const last_posts = posts.slice(0, 3);
 ---
 
+
+
+
 <BaseLayout>
 
 <!-- Google tag (gtag.js) -->
@@ -22,12 +25,18 @@ const last_posts = posts.slice(0, 3);
   gtag('config', 'G-B2JEVNPCKR');
 </script>
 
-    <div class="pb-12 mt-5">
-          <div class="text-4xl font-bold">David Lopez Rodriguez, PhD</div>
-          <div class="text-2xl py-2 font-bold">Research Fellow - Lausanne University & Independent Consultant </div>
 
+    <div class="pb-12 mt-5">
+          <div class="text-4xl py-4 font-bold">David Lopez Rodriguez, PhD</div>
+          <div class="text-1xl  font-bold"> • Data Scientist / Bioinformatician / Toxicologist - Lausanne University </div>
+          <div class="text-1xl font-bold"> • Project Coordinator - Pesticide Monitoring Project </div>
+          <div class="text-1xl font-bold"> • Independent consultant </div>
+
+
+
+    
           <p align="justify">
-          <div class="py-2"><text class="text-lg"> 
+          <div class="py-7"><text class="text-lg"> 
       
                <div class="mb-5 text-justify">
              I am multidisciplinary researcher with an expertise in biology, toxicology, 
@@ -35,20 +44,17 @@ const last_posts = posts.slice(0, 3);
               
                <div style="line-height:40%;"> <br></div>
                
-              As a researcher my focus lies in creating computational tools allowing to 
-              advance scientific knowledge to improve public health and environmental 
-              policies. I strive to develop a comprehensive understanding of the risks 
-              associated with chemical exposures and gain an understanding on the biological 
-              process involved in the control of metabolism.            
+               As a researcher my focus lies in creating computational tools allowing to advance scientific knowledge to improve public health 
+               and environmental policies. I strive to develop a comprehensive understanding of the risks associated with chemical exposures 
+               and gain an understanding on the biological process behind their effects.          
            
                 <div style="line-height:40%;"> <br></div>
                 
-              As an independent consultant, I offer my expertise in biostatistics, 
-              bioinformatics, and advanced statistics to scientists and industries. 
-              My skill set encompasses a spectrum of offerings, ranging from meticulous 
-              data analysis, especially in omics data, to intricate statistical modeling, 
-              as well as the creation of insightful data visualizations and their subsequent 
-              interpretation.
+              As an independent consultant, I offer my expertise in bioinformatics, 
+              biostatistics and multiomics to scientists and industries.
+              My skill set encompasses a spectrum of offerings, ranging from multiomics data, 
+              to intricate statistical modeling, including the creation of insightful data visualizations 
+              and their subsequent interpretation.
            </div>
 
                </text> </div></p>
@@ -59,7 +65,9 @@ const last_posts = posts.slice(0, 3);
            </div>
            
   
-           <text class="text-lg"><p align="justify">  <b>	Expertise Keywords:</b> Bioinformatics, Chemo-informatics, Neuroendocrinology, Environmental Sciences, Environmental Health, Endocrine Disruption, Toxicology, Computational Biology, Adverse outcome pathways, Chemical Risk Assessment, Environmental Pollution, Data Analysis, Estrogens, Molecular Biology, Physiology, Reproductive Toxicology, Xenobiotics.  </p> </text>
+           <text class="text-lg"><p align="justify">  <b>	Expertise Keywords:</b> Bioinformatics, Chemo-informatics, Neuroendocrinology, 
+            Multiomics, Environmental Sciences, Endocrine Disruption, Toxicology, Computational Biology, Adverse outcome pathways, 
+            Chemical Risk Assessment, Biostatistics, Molecular Biology, Physiology, Reproductive Toxicology </p> </text>
        
 
 
