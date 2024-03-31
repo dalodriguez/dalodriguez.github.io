@@ -1,2 +1,2 @@
-# David Lopez-Rodriguez Personal Website
-https://dalodriguez.github.io/
+# Personal Website
+[https://dalodriguez.github.io/](https://dlopez-rodriguez.ch/)
