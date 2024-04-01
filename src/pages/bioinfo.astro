@@ -1,0 +1,78 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const last_posts = posts.slice(0, 3);
+---
+
+
+
+
+
+<BaseLayout>
+
+
+
+<div class="text-2xl font-bold"> <span class='bigger'>(1)</span> <span class='headmain'>ExPCom: a tool to infer cell-cell communnication using a scRNAseq dataset </span> </div>
+
+<div class="social-icons px-6 my-2 py-2 flex"><a href="https://github.com/dalodriguez/ExPCom/" target="_blank" class="mx-3" aria-label="ExPCom" title="ExPCom">
+      <img src="/TanyCom.png" alt="Italian Trulli" width="700" height="400"> </img> </a></div>
+
+<div class="social-icons px-6 my-2 py-2 flex"><a href="https://github.com/dalodriguez/ExPCom/" target="_blank" class="mx-3" aria-label="Github" title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: currentColor;transform: ;msFilter:;" > <path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z" ></path> </svg>
+    <a href="https://github.com/dalodriguez/ExPCom/" target="_blank"><b> https://github.com/dalodriguez/ExPCom/ </b></a> </a></div>
+
+    <p align="justify"><div class="py-1"><text class="text-lg"><div class="mb-1 text-justify">
+      This repository provides a tool to infer cell-cell communnication using a scRNAseq dataset. ExPCom allows to 
+      replicate the analysis found in Brunner et al. (2024). The functions calculate communication scores for any 
+      set of ligand-receptor pairs (e.g. CellChat Database) based on expression product. The L*R expression product 
+      method allows to obtain a continuous value by multiplying all possible combinations of the expression of both 
+      interacting molecules between two given cell types.   
+              </div> </text> </div></p>
+
+
+    <div class="divider my-0"></div>
+
+
+    <div class="text-2xl font-bold"> <span class='bigger'>(2)</span> <span class='headmain'>DPGEA: a Differential Pseudospatial Gradient Expression Analysis for scRNAseq data </span> </div>
+
+    <div class="social-icons px-6 my-2 py-2 flex"><a href="https://github.com/dalodriguez/DPGEA/" target="_blank" class="mx-3" aria-label="DPGEA" title="DPGEA">
+      <img src="/DPGEA_prin.png" alt="Italian Trulli" width="750" height="500"> </img> </a></div>
+
+      <div class="social-icons px-6 my-2 py-2 flex"><a href="https://github.com/dalodriguez/DPGEA/" target="_blank" class="mx-3" aria-label="Github" title="Github">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: currentColor;transform: ;msFilter:;" > <path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z" ></path> </svg>
+        <a href="https://github.com/dalodriguez/DPGEA/" target="_blank"><b> https://github.com/dalodriguez/DPGEA/ </b></a> </a></div>
+
+      
+  
+            <p align="justify"><div class="py-1"><text class="text-lg"><div class="mb-1 text-justify">
+              This repository provides a framework to explore scRNAseq datasets displaying pseudospatial distributions. 
+              The function calculates Differential Pseudospatial Gradient Expression (DPGEA) as transitional points 
+              within the pseusopace calculated using Monocle3. DPGEA allow to replicate the analysis available in 
+              Brunner et al. (2024) to identify tanycyte/ependyma specific and overlaping markers.       
+                  </div></text> </div></p>
+
+
+
+          <p align="justify"><div class="py-1"><text class="text-lg"> <div class="mb-1 text-justify"></div></text> </div></p>
+
+        <div class="mt-8"></div>
+        </div>
+
+
+
+
+
+      
+
+
+     
+        
+
+
+</BaseLayout>
