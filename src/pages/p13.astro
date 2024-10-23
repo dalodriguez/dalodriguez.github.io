@@ -1,0 +1,71 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+
+<BaseLayout title = "HypCCAtlas - David Lopez Rodriguez">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B2JEVNPCKR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B2JEVNPCKR');
+</script>
+
+<div>
+          <div class="text-3xl w-full font-bold mb-2">HypCCAtlas, A Functional Hypothalamic Atlas of Cell-Cell Communication</div>
+        </div>
+
+     
+
+</div>
+
+
+<div class="social-icons px-6 my-2 py-2 flex">
+		<a href="/Hypccatlas.png" target="_blank" class="mx-3" aria-label="Hypccatlas" title="Hypccatlas">
+				<img src="/Hypccatlas.png" alt="Hypccatlas" width="800" height="800"> </img>
+			</a>
+</div>
+
+
+ <div class="py-4">
+ <text class="text-lg">
+ 
+ 
+  <p align="center">  
+  <br>
+
+
+  
+  <p align="justify">  
+ <br>
+  
+ 
+
+ <b>Summary.</b>
+ As a webtool, HypCCAtlas is a functional communication atlas of hypothalamic cell populations to infer neuroendocrine regulations, including energy balance and reproduction. I generated a novel approach based on single-cell RNAseq datasets to evaluate intercellular cell-cell interactions and their association with intracellular signaling networks. The atlas, having a total of 200 000 cells comprises multiple publicly available datasets and includes different experimental conditions (i.e. male and females undergoing different metabolic stress conditions). The metadata of the atlas, including regional information from 11 different hypothalamic nucleus was curated to obtain 7 different levels of heterogeneity, from Level1, the most general, to Level7, where multiple subpopulations can be distinguished for each nucleus. From our model, we can first obtain an intercellular cell-cell interaction score reflecting ligand-receptor expression interaction between a source and target populations. These interactions are corrected according to a connectivity score based on neuroanatomical connectivity information to improve their plausibility. Secondly, we can obtain a signaling pathway-centric analysis based on gene set variation analysis (GSVA), for which we can obtain the gene ontology or Kegg pathway enrichment for each individual cells. Finally, a functional connectivity score can be obtained to infer how communication between two different cell types allows to activate specific functions and signaling pathways.  </p>
+ <p align="justify">  
+ <br>
+ The tool will be soon available at www.hypccatlas.unil.ch and will be a valuable tool for the scientific community to infer mechanisms of communication and generate hypothesis in the field of neuroscience.
+ </p>
+ <p align="justify">  
+ <br>
+ </p>
+ 
+ 
+<br>
+
+
+
+
+ <p align="justify"> 
+<br>
+Project held at the <a href="https://wp.unil.ch/langletlab/" target="_blank"><i>laboratory of Prof. Fanny Langlet</i></a>  
+(Department of Biomedical Sciences, University of Lausanne, Switzerland).</p></text>
+</div>
+
+
+ 
+</BaseLayout>
