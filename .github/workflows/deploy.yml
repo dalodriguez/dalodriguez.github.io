@@ -60,6 +60,9 @@ jobs:
 
       - name: Ensure correct permissions
         run: chmod -R 755 dist/
+        
+      - name: Remove symlinks in dist folder
+        run: find dist -type l -delete
 
       - name: Debug deployment issue (Check paths and links)
         run: find dist/ -type l -exec ls -l {} \;
