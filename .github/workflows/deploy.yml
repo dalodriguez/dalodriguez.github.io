@@ -29,7 +29,7 @@ jobs:
         run: npx astro build
 
       - name: Upload GitHub Pages Artifact
-        uses: actions/upload-pages-artifact@v2  # ✅ This replaces the deprecated v3
+        uses: actions/upload-pages-artifact@v4  
         with:
           path: dist  # Ensure this matches your Astro build output
 
