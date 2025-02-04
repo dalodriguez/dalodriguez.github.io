@@ -24,7 +24,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          path: .  # Adjust if your build output is in a different directory
+          path: /src/
 
   deploy:
     needs: build
@@ -37,7 +37,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: github-pages
-          path: .
+          path: /src/
 
       - name: Deploy to GitHub Pages
         id: deployment
