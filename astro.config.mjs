@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
-  site: 'https://dalodriguez.github.io',
+  site: 'https://dlopez-rodriguez.ch',
   base: '/',  
   integrations: [mdx(), sitemap(), tailwind()]
 });
