@@ -38,8 +38,8 @@ jobs:
       - name: Verify dist folder
         run: du -sh dist && find dist/ -type l
 
-      - name: Remove hard links in dist folder
-        run: find dist -type f -links +1 -exec rm -f {} \;
+      - name: Check build folder size (Debugging)
+        run: du -sh dist/
 
       - name: Upload artifact for deployment
         uses: actions/upload-artifact@v4
@@ -63,7 +63,7 @@ jobs:
 
       - name: Ensure correct permissions
         run: chmod -R 755 dist/
-
+        
       - name: Remove symlinks in dist folder
         run: find dist -type l -delete
 
