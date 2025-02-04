@@ -24,7 +24,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          path: dist  # Adjust if your build output is in a different directory
+          path: .  # Adjust if your build output is in a different directory
 
   deploy:
     needs: build
