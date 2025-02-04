@@ -5,8 +5,6 @@ import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
   site: 'https://dalodriguez.github.io',
-  base: '/',  // Ensures paths are relative
-  output: 'static',
-  outDir: 'dist',
+  base: '/',  
   integrations: [mdx(), sitemap(), tailwind()]
 });

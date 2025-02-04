@@ -1,5 +1,6 @@
-# build output
-dist/
+# Ignore dist locally, but allow it in GitHub Actions
+dist/*
+!dist/.keep  # Ensure the folder exists in GitHub Actions
 
 # dependencies
 node_modules/
