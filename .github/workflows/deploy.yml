@@ -28,6 +28,9 @@ jobs:
       - name: Build Astro Project
         run: npx astro build
 
+      - name: Clean Up Old Builds
+        run: rm -rf dist  # Clean up any old build artifacts
+
       - name: Upload GitHub Pages Artifact
         uses: actions/upload-pages-artifact@v2  # ✅ Correct version
         with:
