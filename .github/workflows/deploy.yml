@@ -67,8 +67,14 @@ jobs:
       - name: Remove symlinks in dist folder
         run: find dist -type l -delete
 
-      - name: Debug deployment issue (Check paths and links)
+      - name: Debug deployment issue (Check symlinks)
         run: find dist/ -type l -exec ls -l {} \;
+
+      - name: List files in dist folder (After download)
+        run: ls -la dist/
+
+      - name: Verify disk usage (Debugging)
+        run: du -sh dist/
 
       - name: Deploy to GitHub Pages
         id: deployment
