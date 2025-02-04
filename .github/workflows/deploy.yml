@@ -29,20 +29,21 @@ jobs:
       - name: Build the Astro site
         run: npm run build
 
-      - name: Check dist folder size
-        run: du -sh dist || echo "⚠️ dist/ folder not found!"
+      - name: List files in dist (Debugging)
+        run: ls -la dist/
 
-      - name: Check for symlinks and remove them
-        run: find dist/ -type l -delete
+      - name: Remove hidden files (MacOS/Linux-specific issue)
+        run: find dist/ -name ".*" -exec rm -rf {} \;
 
-      - name: Check if dist contains invalid files
-        run: find dist/ -type f ! -name "*.html" ! -name "*.css" ! -name "*.js" ! -name "*.png" ! -name "*.jpg" ! -name "*.gif" ! -name "*.svg" -exec ls -l {} \; || echo "✅ All files are valid"
+      - name: Verify dist folder
+        run: du -sh dist && find dist/ -type l
 
       - name: Upload artifact for deployment
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
           path: dist/
+          if-no-files-found: error  # Stop if no files are found
 
   deploy:
     needs: build
@@ -59,6 +60,9 @@ jobs:
 
       - name: Ensure correct permissions
         run: chmod -R 755 dist/
+
+      - name: Debug deployment issue (Check paths and links)
+        run: find dist/ -type l -exec ls -l {} \;
 
       - name: Deploy to GitHub Pages
         id: deployment
