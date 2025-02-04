@@ -1,9 +1,9 @@
-name: Deploy to GitHub Pages
+name: Deploy Astro Site
 
 on:
   push:
-    branches: [ main ]
-  workflow_dispatch:
+    branches:
+      - main  # Change this if your branch name is different
 
 permissions:
   contents: read
@@ -14,59 +14,28 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Force refresh of actions
-        run: rm -rf ~/.npm ~/.cache
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Clean previous builds
-        run: rm -rf dist && mkdir dist
-
-      - name: Build the Astro site
-        run: npm run build
-
-      - name: List files in dist (Debugging)
-        run: ls -la dist/
-
-      - name: Remove hidden files (MacOS/Linux-specific issue)
-        run: find dist/ -name ".*" -exec rm -rf {} \;
-
-      - name: Verify dist folder
-        run: du -sh dist && find dist/ -type l
-
-      - name: Upload artifact for deployment
-        uses: actions/upload-artifact@v4
+      - name: Install Node.js
+        uses: actions/setup-node@v4
         with:
-          name: github-pages
-          path: dist/
-          if-no-files-found: error  # Stop if no files are found
+          node-version: 18
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build the Astro Project
+        run: npx astro build
+
+      - name: Upload GitHub Pages Artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: dist  # Make sure this matches your output directory
 
   deploy:
-    needs: build
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
     steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: github-pages
-          path: dist/
-
-      - name: Ensure correct permissions
-        run: chmod -R 755 dist/
-        
-      - name: Remove symlinks in dist folder
-        run: find dist -type l -delete
-
-      - name: Debug deployment issue (Check paths and links)
-        run: find dist/ -type l -exec ls -l {} \;
-
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
