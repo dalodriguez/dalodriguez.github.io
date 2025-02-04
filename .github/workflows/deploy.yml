@@ -3,7 +3,7 @@ name: Deploy Astro Site
 on:
   push:
     branches:
-      - main  # Change this if your branch name is different
+      - main  # Change if using a different branch
 
 permissions:
   contents: read
@@ -23,19 +23,19 @@ jobs:
           node-version: 18
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci  # Faster and more reliable than `npm install`
 
-      - name: Build the Astro Project
+      - name: Build Astro Project
         run: npx astro build
 
       - name: Upload GitHub Pages Artifact
-        uses: actions/upload-pages-artifact@v1  # ✅ This replaces the deprecated v3
+        uses: actions/upload-pages-artifact@v2  # ✅ Correct version
         with:
-          path: dist  # Ensure this matches your Astro build output
+          path: dist  # Make sure this is your Astro build output
 
   deploy:
     runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
