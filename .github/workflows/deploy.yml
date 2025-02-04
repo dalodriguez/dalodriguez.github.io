@@ -14,26 +14,42 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your repository using git
+      - name: Checkout repository
         uses: actions/checkout@v4
-      
+
       - name: Force refresh of actions
         run: rm -rf ~/.npm ~/.cache
 
       - name: Install dependencies
         run: npm ci  # Ensures a clean install
 
+      - name: Clean previous builds
+        run: rm -rf dist && mkdir dist
+
       - name: Build the Astro site
-        run: npm run build  # This explicitly runs the build process
+        run: npm run build  # Explicitly build the site
 
       - name: Check if dist folder exists
         run: ls -la dist || echo "⚠️ dist/ folder not found!"
+
+      - name: Check dist folder size
+        run: du -sh dist || echo "⚠️ dist/ folder not found!"
+
+      - name: Check for symlinks in dist/
+        run: find dist/ -type l -exec ls -l {} \; || echo "✅ No symlinks found"
+
+      - name: Remove symlinks in dist/
+        run: find dist/ -type l -delete
 
       - name: Upload artifact for deployment
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          path: dist/
+          path: |
+            dist/**/*.html
+            dist/**/*.css
+            dist/**/*.js
+            dist/assets/
 
   deploy:
     needs: build
@@ -47,6 +63,9 @@ jobs:
         with:
           name: github-pages
           path: dist/
+
+      - name: Check dist folder size after download
+        run: du -sh dist || echo "⚠️ dist/ folder not found after download!"
 
       - name: Check if dist folder exists after download
         run: ls -la dist || echo "⚠️ dist/ folder not found after download!"
